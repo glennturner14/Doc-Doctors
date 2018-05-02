@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocDoctors", "DocDoctors\DocDoctors.csproj", "{7F6E967B-40F1-45D7-A5FC-2F9BD64B28F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocDoctors", "DocDoctors\DocDoctors.csproj", "{7F6E967B-40F1-45D7-A5FC-2F9BD64B28F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocDoctors.DAL", "DocDoctors.DAL\DocDoctors.DAL.csproj", "{782A7705-944A-432E-A674-895142186742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocDoctors.Models", "DocDoctors.Models\DocDoctors.Models.csproj", "{C64370B9-2B12-4914-801C-C2467CCF7006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7F6E967B-40F1-45D7-A5FC-2F9BD64B28F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6E967B-40F1-45D7-A5FC-2F9BD64B28F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F6E967B-40F1-45D7-A5FC-2F9BD64B28F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782A7705-944A-432E-A674-895142186742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782A7705-944A-432E-A674-895142186742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782A7705-944A-432E-A674-895142186742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782A7705-944A-432E-A674-895142186742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64370B9-2B12-4914-801C-C2467CCF7006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64370B9-2B12-4914-801C-C2467CCF7006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64370B9-2B12-4914-801C-C2467CCF7006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64370B9-2B12-4914-801C-C2467CCF7006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

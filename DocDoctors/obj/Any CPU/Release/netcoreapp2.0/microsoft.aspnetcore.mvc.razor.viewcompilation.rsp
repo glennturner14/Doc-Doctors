@@ -1,0 +1,12 @@
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=DocDoctors
+--content-root=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Home\About.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Home\Contact.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Home\Index.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Shared\Error.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Shared\_Layout.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\_ViewImports.cshtml
+--file=C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\Views\_ViewStart.cshtml

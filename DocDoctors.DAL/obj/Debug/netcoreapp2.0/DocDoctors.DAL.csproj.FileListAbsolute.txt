@@ -1,0 +1,11 @@
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\bin\Debug\netcoreapp2.0\DocDoctors.DAL.deps.json
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\bin\Debug\netcoreapp2.0\DocDoctors.DAL.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\bin\Debug\netcoreapp2.0\DocDoctors.DAL.pdb
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\bin\Debug\netcoreapp2.0\DocDoctors.Models.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\bin\Debug\netcoreapp2.0\DocDoctors.Models.pdb
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.csprojResolveAssemblyReference.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.csproj.CoreCompileInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.AssemblyInfoInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.AssemblyInfo.cs
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.DAL\obj\Debug\netcoreapp2.0\DocDoctors.DAL.pdb

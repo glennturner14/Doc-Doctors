@@ -1,0 +1,11 @@
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\bin\Debug\netcoreapp2.0\DocDoctors.deps.json
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\bin\Debug\netcoreapp2.0\DocDoctors.runtimeconfig.json
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\bin\Debug\netcoreapp2.0\DocDoctors.runtimeconfig.dev.json
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\bin\Debug\netcoreapp2.0\DocDoctors.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\bin\Debug\netcoreapp2.0\DocDoctors.pdb
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.csprojResolveAssemblyReference.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.csproj.CoreCompileInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.AssemblyInfoInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.AssemblyInfo.cs
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors\obj\Debug\netcoreapp2.0\DocDoctors.pdb

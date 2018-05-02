@@ -1,0 +1,8 @@
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\bin\Debug\netcoreapp2.0\DocDoctors.Models.deps.json
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\bin\Debug\netcoreapp2.0\DocDoctors.Models.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\bin\Debug\netcoreapp2.0\DocDoctors.Models.pdb
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\obj\Debug\netcoreapp2.0\DocDoctors.Models.csproj.CoreCompileInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\obj\Debug\netcoreapp2.0\DocDoctors.Models.AssemblyInfoInputs.cache
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\obj\Debug\netcoreapp2.0\DocDoctors.Models.AssemblyInfo.cs
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\obj\Debug\netcoreapp2.0\DocDoctors.Models.dll
+C:\Development\CodeGames\2018\Doc_Doctors\DocDoctors.Models\obj\Debug\netcoreapp2.0\DocDoctors.Models.pdb

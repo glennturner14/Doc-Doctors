@@ -10,30 +10,46 @@ using DocDoctors.DAL;
 
 namespace DocDoctors.Controllers
 {
+
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
             ViewData["CompanyName"] = "Document Doctors Ltd.";
 
-            //List<Client> clients = new List<Client>();
-            //clients.Add(new Client() { ClientId = 1, Name = "Glenn" });
-            //clients.Add(new Client() { ClientId = 2, Name = "Dan" });
             ClientGateway clientGateway = new ClientGateway();
             ClientCollection clients = clientGateway.GetClients();
+            return View("Index", clients);
+        }
+
+        //[Route("api/home")]
+        //[HttpPost]
+        //public IActionResult Client(Client client)
+        //{
+        //    ClientGateway clientGateway = new ClientGateway();
+        //    ClientCollection clients = clientGateway.GetClients();
+        //    return View("Client", clients);
+        //}
+
+        public IActionResult Edit(int id, string name)
+        {
+            Client client = new Models.Client() { ClientId = id, Name = name };
+            return View("Edit", client);
+        }
+
+        public IActionResult Send()
+        {
+            List<Document> documents = new List<Document>();
+            documents.Add(new Document() { Name = "Glenn's Tax Return.docx" });
+            documents.Add(new Document() { Name = "Year end results.pdf" });
 
             IEnumerable<SelectListItem> items = new List<SelectListItem>();
-            items = clients.Select(c => new SelectListItem
+            items = documents.Select(c => new SelectListItem
             {
-                Value = c.ClientId.ToString(),
+                Value = c.Name,
                 Text = c.Name
             });
-
-            //List<SelectListItem> items = new List<SelectListItem>();
-            //items.Add(new SelectListItem { Text = "MyId1", Value = "MyId1", Selected = true });
-            //items.Add(new SelectListItem { Text = "MyId2", Value = "MyId2" });
-            //items.Add(new SelectListItem { Text = "MyId3", Value = "MyId3" });
-            ViewBag.ListOfClients = items;
+            ViewBag.ListOfDocuments = items;
 
             return View();
         }

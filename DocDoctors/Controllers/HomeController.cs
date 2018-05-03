@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using DocDoctors.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DocDoctors.DAL;
+using System.Net.Http;
 
 namespace DocDoctors.Controllers
 {
@@ -24,11 +25,21 @@ namespace DocDoctors.Controllers
 
         public IActionResult Sent()
         {
-            ViewData["CompanyName"] = "Document Doctors Ltd.";
+            //ViewData["CompanyName"] = "Document Doctors Ltd.";
 
-            ClientGateway clientGateway = new ClientGateway();
-            ClientCollection clients = clientGateway.GetClients();
-            return View("Index", clients);
+            //ClientGateway clientGateway = new ClientGateway();
+            //ClientCollection clients = clientGateway.GetClients();
+            //return View("Index", clients);
+
+            var values = new Dictionary<string, string>
+{
+   { "Name", "TEst" }
+};
+
+            var content = new FormUrlEncodedContent(values);
+            HttpClient client = new HttpClient();
+            var result = client.PostAsync("http://localhost:38661/api/values", content);
+            return View();
         }
 
         //[Route("api/home")]

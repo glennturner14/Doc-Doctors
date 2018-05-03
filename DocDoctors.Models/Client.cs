@@ -6,11 +6,11 @@ namespace DocDoctors.Models
     {
         public int ClientId { get; set; }
         public string Name { get; set; }
-        public string  FileRepo { get; set; }
+        public FileRepo FileRepo { get; set; }
         public string DefaultFolder { get; set; }
         public string Secret1 { get; set; }
         public string Secret2 { get; set; }
-
+        public string UserId { get; set; }
 
     }
 }

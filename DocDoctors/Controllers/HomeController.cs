@@ -8,6 +8,7 @@ using DocDoctors.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DocDoctors.DAL;
 using System.Net.Http;
+using System.Net;
 
 namespace DocDoctors.Controllers
 {
@@ -23,33 +24,18 @@ namespace DocDoctors.Controllers
             return View("Index", clients);
         }
 
-        public IActionResult Sent()
+        public async Task<IActionResult> Sent()
         {
-            //ViewData["CompanyName"] = "Document Doctors Ltd.";
-
-            //ClientGateway clientGateway = new ClientGateway();
-            //ClientCollection clients = clientGateway.GetClients();
-            //return View("Index", clients);
-
             var values = new Dictionary<string, string>
-{
-   { "Name", "TEst" }
-};
+            {
+               { "Name", "TEst" }
+            };
 
             var content = new FormUrlEncodedContent(values);
             HttpClient client = new HttpClient();
-            var result = client.PostAsync("http://localhost:38661/api/values", content);
+            var result = await client.PostAsync("http://localhost:38661/api/values", content);
             return View();
         }
-
-        //[Route("api/home")]
-        //[HttpPost]
-        //public IActionResult Client(Client client)
-        //{
-        //    ClientGateway clientGateway = new ClientGateway();
-        //    ClientCollection clients = clientGateway.GetClients();
-        //    return View("Client", clients);
-        //}
 
         public IActionResult Edit(int id, string name)
         {
@@ -73,9 +59,24 @@ namespace DocDoctors.Controllers
 
         public IActionResult Send()
         {
+            string result = string.Empty;
+            using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
+            {
+                client.BaseAddress = new Uri("http://localhost:38661/api/values");
+                HttpResponseMessage response = client.GetAsync("").Result;
+                response.EnsureSuccessStatusCode();
+                result = response.Content.ReadAsStringAsync().Result;
+            }
+
             List<Document> documents = new List<Document>();
-            documents.Add(new Document() { Name = "Glenn's Tax Return.docx" });
-            documents.Add(new Document() { Name = "Year end results.pdf" });
+            string[] files = result.Split(",");
+            foreach (string file in files)
+            {
+                documents.Add(new Document() { Name = file.Replace("]","").Replace("[","").Replace("\"", "") });
+            }
+
+            //documents.Add(new Document() { Name = "Glenn's Tax Return.docx" });
+            //documents.Add(new Document() { Name = "Year end results.pdf" });
 
             IEnumerable<SelectListItem> items = new List<SelectListItem>();
             items = documents.Select(c => new SelectListItem

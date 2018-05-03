@@ -13,26 +13,29 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ClientId" class="control-label"></label>
-                <input asp-for="ClientId" class="form-control" />
-                <span asp-validation-for="ClientId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FileRepo" class="control-label"></label>
-                <input asp-for="FileRepo" class="form-control" />
-                <span asp-validation-for="FileRepo" class="text-danger"></span>
+			<div class="form-group">
+                <label asp-for="FileRepo" class="control-label">Repository</label>
+				<select asp-for="FileRepo" class="form-control">
+					<option value="Dropbox">Dropbox</option>
+					<option value="GoogleDrive">Google Drive</option>
+					<option value="OneDrive">One Drive</option>
+				</select>
             </div>
             <div class="form-group">
-                <label asp-for="DefaultFolder" class="control-label"></label>
+                <label asp-for="DefaultFolder" class="control-label">Default Folder</label>
                 <input asp-for="DefaultFolder" class="form-control" />
                 <span asp-validation-for="DefaultFolder" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+			<div class="form-group">
                 <label asp-for="Secret1" class="control-label"></label>
                 <input asp-for="Secret1" class="form-control" />
                 <span asp-validation-for="Secret1" class="text-danger"></span>

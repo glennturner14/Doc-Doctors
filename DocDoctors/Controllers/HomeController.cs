@@ -22,6 +22,15 @@ namespace DocDoctors.Controllers
             return View("Index", clients);
         }
 
+        public IActionResult Sent()
+        {
+            ViewData["CompanyName"] = "Document Doctors Ltd.";
+
+            ClientGateway clientGateway = new ClientGateway();
+            ClientCollection clients = clientGateway.GetClients();
+            return View("Index", clients);
+        }
+
         //[Route("api/home")]
         //[HttpPost]
         //public IActionResult Client(Client client)
@@ -33,7 +42,21 @@ namespace DocDoctors.Controllers
 
         public IActionResult Edit(int id, string name)
         {
-            Client client = new Models.Client() { ClientId = id, Name = name };
+            FileRepoCollection repos = new FileRepoCollection();
+            repos.Add(new FileRepo() { Id = 1, Name = "Dropbox" });
+            repos.Add(new FileRepo() { Id = 2, Name = "Google Drive" });
+            repos.Add(new FileRepo() { Id = 3, Name = "One Drive" });
+
+            IEnumerable<SelectListItem> items = new List<SelectListItem>();
+            items = repos.Select(c => new SelectListItem
+            {
+                Value = c.Name,
+                Text = c.Name
+            });
+
+            FileRepo repo = new FileRepo() { Id = 1, Name = "Google Drive" };
+            Client client = new Models.Client() { ClientId = id, Name = name, FileRepo=repo };
+            ViewBag.ListOfRepos = items;
             return View("Edit", client);
         }
 

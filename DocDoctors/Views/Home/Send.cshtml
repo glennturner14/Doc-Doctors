@@ -1,8 +1,32 @@
-﻿
+﻿@model DocDoctors.Models.Send
+
 @{
     ViewData["Title"] = "Send document to recipient";
 }
 
 <h2>Send</h2>
-@Html.DropDownList("ListOfDocuments", "Select a document")
 
+<form asp-action="Sent" asp-controller="Home">
+	<div class="form-group">
+		@Html.DropDownList("ListOfDocuments", null,String.Empty, new { @class="form-control" })
+	</div>
+	<div class="form-group">
+		<label asp-for="FileRepo" class="control-label">Repository</label>
+		<select asp-for="FileRepo" class="form-control">
+			<option value="Dropbox">Dropbox</option>
+			<option value="GoogleDrive">Google Drive</option>
+			<option value="OneDrive">One Drive</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label asp-for="DefaultFolder" class="control-label">Default Folder</label>
+		<input asp-for="DefaultFolder" class="form-control" />
+		<span asp-validation-for="DefaultFolder" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Message" class="control-label">Message</label>
+		<input asp-for="Message" class="form-control" />
+		<span asp-validation-for="DefaultFolder" class="text-danger"></span>
+	</div>
+    <input type="submit" value="Send" class="btn btn-default"/>
+</form>

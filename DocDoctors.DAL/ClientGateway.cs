@@ -8,8 +8,8 @@ namespace DocDoctors.DAL
         public ClientCollection GetClients()
         {
             ClientCollection clients = new ClientCollection();
-            clients.Add(new Client() { ClientId = 1, Name = "Glenn" });
-            clients.Add(new Client() { ClientId = 2, Name = "Dan" });
+            clients.Add(new Client() { ClientId = 1, Name = "Glenn Ltd" });
+            clients.Add(new Client() { ClientId = 2, Name = "Dan PLC" });
 
             return clients;
         }
